@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExpenseCalculator</string>
+    <string-array name="expense_list">
+        <item>Housing</item>
+        <item>Eating out</item>
+        <item>Travel</item>
+        <item>Shopping</item>
+    </string-array>
+</resources>

@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExpenseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Linear layout to contain the image-->
+        <LinearLayout
+            android:id="@+id/icon_wrapper"
+            android:layout_width="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!--The icon-->
+            <ImageView
+                android:id="@+id/imageView_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+        <!--The label-->
+        <TextView
+            android:id="@+id/textView_expenseLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_wrapper"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="" />
+
+        <!--The input field-->
+        <EditText
+            android:id="@+id/editText_inputAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/textView_expenseLabel"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--Linear layout to contain the button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText_inputAmount"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!--The submit button-->
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textSize="18sp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="addExpense"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
